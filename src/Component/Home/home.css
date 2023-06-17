@@ -114,4 +114,19 @@
     margin: auto;
     color: var(--whiteColor);
     z-index: 100;
+
+    .textDiv{
+        padding: 2rem 0;
+
+        .smallText{
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+
+        .homeTitle{
+            position: relative;
+            font-size: 1.8rem;
+            
+        }
+    }
 }
