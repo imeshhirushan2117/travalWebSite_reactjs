@@ -183,19 +183,18 @@
     .icon {
         font-size: 18px;
         /* color: var(-primaryColor-) */
-        color: var(--whiteColor)
-        !important;
+        color: var(--whiteColor) !important;
         margin-left: 10px;
-        
+
 
     }
 
-    .input[type=range]{
+    .input[type=range] {
         background: blue;
     }
-    
 
-    .searchOption{
+
+    .searchOption {
         position: absolute;
         background: var(--gradientColor);
         width: max-content;
@@ -207,13 +206,30 @@
         transform: translate(-50%);
         justify-content: center;
         cursor: pointer;
-         &:hover{
+
+        &:hover {
             background: var(--primaryColor);
         }
     }
 
-    span{
+    span {
         font-size: 13px;
     }
-   
 }
+.homeFooterIcons {
+    width: 100%;
+    justify-content: space-between;
+    /* color: var(--primaryColor);
+    font-weight: 600; */
+
+    .icon{
+        font-size: 20px;
+        margin: 0 5px;
+        color: var(--whiteColor);
+        font-weight: 600;
+        &:hover {
+            color: var(--primaryColor);
+        }
+    } 
+}
+
