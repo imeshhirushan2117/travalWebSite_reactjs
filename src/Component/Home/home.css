@@ -67,8 +67,8 @@
     --textColor: hsl(240, 4%, 36%);
     --whiteColorDeam: hsl(0, 0%, 93%);
     --greyText: rgb(190, 190, 190);
-    --imputColor: rgb(239, 239, 239);
-    --bodyColor: rgb(240, 240, 246);
+    --inputColor: hsla(0, 8%, 79%, 0.639);
+    --bodyColor: rgba(240, 240, 246, 0.792);
     --cardBG: rgb(225, 225, 235);
 }
 
@@ -115,18 +115,96 @@
     color: var(--whiteColor);
     z-index: 100;
 
-    .textDiv{
+    .textDiv {
         padding: 2rem 0;
 
-        .smallText{
+        .smallText {
             font-size: 13px;
             text-transform: uppercase;
         }
 
-        .homeTitle{
+        .homeTitle {
             position: relative;
             font-size: 1.8rem;
-            
+
         }
+    }
+
+    .carDiv {
+        position: relative;
+        padding: 2rem 1rem;
+        background: var(--whiteColor);
+        border-radius: 10px;
+        gap: 1rem;
+    }
+
+    .carDiv label {
+        display: block;
+        color: var(--textColor);
+        padding-bottom: 10px;
+        font-size: 13px;
+        padding-bottom: 10px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .label_total {
+        justify-content: space-between;
+        align-items: center;
+
+        .total {
+            color: var(--textColor);
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+
+    }
+
+    .input {
+        height: 40px;
+        padding: 0 1rem;
+        background: var(--inputColor);
+        border-radius: 3rem;
+    }
+
+    .input input {
+        background: none;
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 10px;
+        font-weight: 500;
+
+        &::placeholder {
+            font-size: 13px;
+        }
+    }
+
+    .icon {
+        font-size: 18px;
+        /* color: var(-primaryColor-) */
+        color: var(--whiteColor)
+        !important;
+        margin-left: 10px;
+        
+
+    }
+
+    .input[type=range]{
+        background: blue;
+    }
+    
+
+    .searchOption{
+        position: absolute;
+        background: var(--gradientColor);
+        width: max-content;
+        bottom: -0.7rem;
+        column-gap: .8rem;
+        padding: 5px 1rem;
+        border-radius: 3rem;
+        left: 50%;
+        transform: translate(-50%);
+        justify-content: center;
     }
 }
