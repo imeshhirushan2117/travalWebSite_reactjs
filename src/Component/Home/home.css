@@ -206,5 +206,14 @@
         left: 50%;
         transform: translate(-50%);
         justify-content: center;
+        cursor: pointer;
+         &:hover{
+            background: var(--primaryColor);
+        }
     }
+
+    span{
+        font-size: 13px;
+    }
+   
 }
