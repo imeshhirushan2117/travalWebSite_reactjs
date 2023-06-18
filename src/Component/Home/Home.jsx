@@ -24,13 +24,31 @@ const Home = () => {
                 </div>
 
                 <div className="carDiv grid">
-                    <div className="destinationInput">
+
+                <div className="destinationInput">
                         <label htmlFor="city">Search your destination:</label>
                         <div className="input flex">
                             <input type="text" placeholder="Enter name hear...." />
                             <GrLocation className="icon"/>
                         </div>
                     </div>
+
+
+                    <div className="dataInput">
+                        <label htmlFor="date">Select your date:</label>
+                        <div className="input flex">
+                            <input type="date" />
+                        </div>
+                    </div>
+
+                  
+
+                    
+                    
+
+
+                  
+
                 </div>
             </div>
 
