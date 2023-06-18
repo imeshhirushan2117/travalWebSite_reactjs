@@ -1,6 +1,7 @@
 import React from "react";
 import './home.css'
 import video from '../../Assets/video.mp4'
+import {GrLocation} from 'react-icons/gr'
 
 const Home = () => {
     return(
@@ -19,6 +20,17 @@ const Home = () => {
                         Search Yout Holidays
                     </h1>
                     
+                
+                </div>
+
+                <div className="carDiv grid">
+                    <div className="destinationInput">
+                        <label htmlFor="city">Search your destination:</label>
+                        <div className="input flex">
+                            <input type="text" placeholder="Enter name hear...." />
+                            <GrLocation className="icon"/>
+                        </div>
+                    </div>
                 </div>
             </div>
 
